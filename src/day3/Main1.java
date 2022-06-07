@@ -13,6 +13,37 @@ public class Main1 {
 		 * 
 		 * 출력 리그에서 치루어 지는 경기의 수
 		 */
+		
+		
+//		int n;
+//		int s=0;
+//		
+//		Scanner sc = new Scanner(System.in);
+//		
+//		n= sc.nextInt();
+//		
+//		
+//		for(int i=1; i<n;i++) {
+//			s= s+ (n-i);
+//			System.out.println(s);
+//		}
+//		
+//		System.out.println(s);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 		int n = 0, m = 0;
 

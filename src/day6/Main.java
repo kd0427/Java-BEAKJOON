@@ -2,6 +2,7 @@ package day6;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 public class Main {
 
@@ -20,24 +21,30 @@ public class Main {
 		int n = Integer.parseInt(br.readLine());
 		String result = "";
 		
-		char ggo[]= new  char[] {'a','e','i','o','u'};
+		String ggo[]= new  String[] {"a","e","i","o","u"};
+		
+		ArrayList<String> answer = new ArrayList<String>();
 		
 		for(int i =0;i<n;i++) {
-			
+			result="";
 			String a = br.readLine();
 			for(int j=0; j<a.length();j++) {
-				if(a.charAt(j)==ggo[j]) {
-					result+= ggo[j]+"";
+				for(String p : ggo) {
+					if(((a.charAt(j)+"").toLowerCase()).equals(p)) {
+						result +=(a.charAt(j)+"");
+					}
 				}
 			}
 			if(result=="") {
-				System.out.println("???");
+				answer.add("???");
 			}else {
-				System.out.println(result);
+				answer.add(result);
 			}
 		}
 		
-
+		for(String a : answer) {
+			System.out.println(a);
+		}
 		
 	}
 
